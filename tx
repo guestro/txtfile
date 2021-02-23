@@ -1,0 +1,54 @@
+group: Lab1
+
+Owner = {
+OwnerId:number, O_FIO:string, Street1:string,House1:string, Apartment1:number, Phone1:string
+1, I.N.Ivanov, Komsomolskaya, 165, 56, 42-26-58
+2, P.V.Antonov, Lenina, 3a,34, 25-78-96
+3, Pilot_LLC, Wins, 56, 4, 73-24-15
+4, CJSC_Meteor, Gorky, 22, NULL, 55-66-59
+}
+
+Object = {
+ObjectId:number, Type2:string ,Street2:string, House2:string, Apartment2:number, Rooms:number, Rent:number,Owner:number
+105, house, Railway, 76, null, 3,200,1
+107, house, Komsomolskaya, 5 null, 3, 185,2
+108, house, Brick, 16, null,2,150,3
+15, cottage, Komsomolskaya, 34, null, 2,450,4
+14, flat, Mira, 22, 17, 1, 120, 1
+16, flat, Mira, 11, 122, 1, 200, 4
+17, flat, Lenina, 5, 45, 1, 200,2
+18, flat, Lermontov, 13, 25, 3, 600, 2
+19, flat, Chekhov, 23,68,2,400,1
+20, flat, Gorky, 35, 34, 1, 250,3
+110, house, Trudovaya, 15, null, 2, 100,3
+111, house, Trudovaya, 26, null, 2, 180,1
+112, house,Lermontov, 67, null, 3, 300,2
+
+}
+
+Client = {
+ ClientId3:string, C_FIO:string, Street3:string, House3:string, Apartment3:number, Phone3:string, TypeRequest:string, RentalRequest:number
+13-03, V.I.Petrov, Ukrainskaya, 69,67, 73-15-69, flat, 120
+17-02, N.A.Vasiliev, Bumajnaya, 24, null, 55-68-96, flat, 250
+01-02, D.B.Vetrov, Mira, 13,19, 71-11-87, house, 150
+22-03 , N.N.Dolgova, Mira, 58,169, 42-63-78, flat, 100
+27-02, E.I.Petrova, Lenina, 56,124, 73-15-69, flat, 200
+17-03 , N.A.Antonova, Bumajnaya, 25,null, 42-12-45, flat, 250
+18-02, O.B.Stepanov, Mira, 95,345, 25-32-12, flat, 200
+}
+
+Contract = {
+c_id:string, StartDate:date, EndDate:date, ObjectId4:number, ClientId4:string, Commission:number
+D-01-2017-1, 2017-01-17, 2017-04-25, 14, 13-03, 10
+D-01-2017-2, 2017-01-18, 2017-07-18, 108, 17-03, 20
+D-01-2017-3, 2017-01-25, 2017-04-25, 107,27-02,15
+D-01-2017-15,2017-04-26, 2017-07-26, 14,22-03,12
+D-02-2017-4,2017-02-02,2018-02-02,110,18-02,20
+D-02-2017-5,2017-02-05,2019-09-05,111,18-02,22
+D-04-2017-16,2017-04-25,2018-10-25,107,27-02,20
+D-02-2017-6,2017-02-16,2017-09-16,20,17-03,34
+D-02-2017-7,2017-02-21,2017-05-21,16,17-02,12
+D-02-2017-8,2017-02-28, 2018-08-29,17,17-03,14
+D-03-2017-9,2017-03-01,2018-09-01,105,27-02,14
+D-03-2017-10,2017-03-03,2017-06-03,112,17-02,12
+}
